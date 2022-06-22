@@ -1,5 +1,3 @@
-# Description: This program detects forks, spoons, and knives
-
 import cv2 as cv # OpenCV computer vision library
 import numpy as np # Scientific computing library 
 
@@ -48,7 +46,7 @@ while True:
         idx = int(detection[1])   # prediction class index. 
 
       # If you want all classes to be labeled instead of just forks, spoons, and knives, 
-      # remove this line below (i.e. remove line 65)
+      # comment this line below
       #if classes[idx] == 'fork' or classes[idx] == 'spoon' or classes[idx] == 'knife':			
         left = detection[3] * cols
         top = detection[4] * rows
